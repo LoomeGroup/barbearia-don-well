@@ -3,7 +3,6 @@ import {
   Scissors,
   Sparkles,
   Flame,
-  Droplets,
   ShieldCheck,
   Crown,
   Target,
@@ -39,13 +38,6 @@ export const services: Service[] = [
     title: "Combo Corte + Barba",
     description:
       "A experiência completa Don Well: corte e barba em um único ritual.",
-    price: "R$ 80",
-  },
-  {
-    icon: Droplets,
-    title: "Tratamentos",
-    description:
-      "Hidratação, skincare masculino e cuidados capilares sob medida.",
     price: "R$ 80",
   },
 ];

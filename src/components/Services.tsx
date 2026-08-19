@@ -11,7 +11,7 @@ export default function Services() {
           description="Cada serviço é conduzido com precisão técnica e atenção aos detalhes, no ritmo de quem entende que grooming é um ritual, não uma tarefa."
         />
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-3">
           {services.map((service) => {
             const Icon = service.icon;
             return (
