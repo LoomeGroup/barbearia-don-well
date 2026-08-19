@@ -1,6 +1,7 @@
-import { Camera, ChevronDown, MessageCircle } from "lucide-react";
+import { ChevronDown, MessageCircle } from "lucide-react";
 import Logo from "./Logo";
 import { whatsappLink } from "../lib/site";
+import heroInterior from "../assets/hero-interior.jpg";
 
 export default function Hero() {
   return (
@@ -8,17 +9,16 @@ export default function Hero() {
       id="topo"
       className="relative flex min-h-screen items-center justify-center overflow-hidden bg-ink"
     >
-      {/* Background photo placeholder */}
+      {/* Background photo */}
       <div className="absolute inset-0">
+        <img
+          src={heroInterior}
+          alt="Interior da Don Well Barber Club"
+          className="h-full w-full object-cover"
+        />
         <div className="bg-grain absolute inset-0" />
-        <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/80 to-ink/50" />
+        <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/85 to-ink/60" />
         <div className="absolute inset-0 bg-radial-spot" />
-        <div className="absolute inset-6 flex items-end justify-start gap-2 border border-dashed border-gold/15 p-4 opacity-60 sm:inset-10">
-          <Camera className="h-4 w-4 text-gold/50" strokeWidth={1.5} />
-          <span className="font-sans text-[0.65rem] tracking-widest text-smoke/70 uppercase">
-            Foto: Interior da barbearia
-          </span>
-        </div>
       </div>
 
       {/* Ambient gold glow */}

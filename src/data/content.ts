@@ -95,17 +95,6 @@ export const galleryImages: GalleryImage[] = [
   { label: "Lounge e área de espera", ratio: "landscape" },
 ];
 
-export type TeamMember = {
-  name: string;
-  role: string;
-};
-
-export const team: TeamMember[] = [
-  { name: "Rafael Souza", role: "Barbeiro Master & Fundador" },
-  { name: "Bruno Alves", role: "Especialista em Barba" },
-  { name: "Diego Martins", role: "Barbeiro Sênior" },
-];
-
 export type Testimonial = {
   name: string;
   quote: string;
