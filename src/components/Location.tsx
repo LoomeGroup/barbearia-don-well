@@ -12,7 +12,7 @@ export default function Location() {
           title="Localização & Horários"
         />
 
-        <div className="mx-auto mt-16 max-w-2xl">
+        <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="flex flex-col gap-10">
             <div className="flex gap-4">
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
@@ -74,6 +74,17 @@ export default function Location() {
                 Instagram
               </a>
             </div>
+          </div>
+
+          <div className="h-full min-h-72 overflow-hidden rounded-sm border border-gold/15 lg:min-h-full">
+            <iframe
+              title="Localização da Don Well Barber Club"
+              src={SITE.mapsEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-full min-h-72 w-full grayscale-25 contrast-[1.05] brightness-90 lg:min-h-full"
+              style={{ border: 0 }}
+            />
           </div>
         </div>
       </div>

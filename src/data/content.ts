@@ -25,21 +25,21 @@ export const services: Service[] = [
     title: "Corte Clássico",
     description:
       "Corte de cabelo personalizado, do clássico ao contemporâneo, com acabamento na navalha.",
-    price: "R$ 70",
+    price: "R$ 50",
   },
   {
     icon: Flame,
     title: "Barba",
     description:
       "Modelagem, toalha quente e navalha para um acabamento de precisão.",
-    price: "R$ 60",
+    price: "R$ 40",
   },
   {
     icon: Sparkles,
     title: "Combo Corte + Barba",
     description:
       "A experiência completa Don Well: corte e barba em um único ritual.",
-    price: "R$ 110",
+    price: "R$ 80",
   },
   {
     icon: Droplets,
