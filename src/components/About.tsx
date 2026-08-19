@@ -1,5 +1,5 @@
-import ImagePlaceholder from "./ImagePlaceholder";
 import { pillars } from "../data/content";
+import aboutBarbeiro from "../assets/about-barbeiro.jpg";
 
 export default function About() {
   return (
@@ -41,11 +41,14 @@ export default function About() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <ImagePlaceholder
-              label="Foto: Barbeiro em atendimento"
-              aspect="portrait"
-              className="w-full"
-            />
+            <div className="group relative aspect-4/3 w-full overflow-hidden rounded-sm border border-gold/15 transition-colors duration-300 hover:border-gold/40">
+              <img
+                src={aboutBarbeiro}
+                alt="Barbeiros da Don Well em atendimento"
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-charcoal/50 via-transparent to-transparent" />
+            </div>
           </div>
         </div>
       </div>

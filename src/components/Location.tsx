@@ -1,6 +1,5 @@
 import { Clock, MapPin, MessageCircle } from "lucide-react";
 import SectionHeading from "./SectionHeading";
-import ImagePlaceholder from "./ImagePlaceholder";
 import InstagramIcon from "./icons/InstagramIcon";
 import { SITE, whatsappLink } from "../lib/site";
 
@@ -13,7 +12,7 @@ export default function Location() {
           title="Localização & Horários"
         />
 
-        <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div className="mx-auto mt-16 max-w-2xl">
           <div className="flex flex-col gap-10">
             <div className="flex gap-4">
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
@@ -76,12 +75,6 @@ export default function Location() {
               </a>
             </div>
           </div>
-
-          <ImagePlaceholder
-            label="Mapa de localização"
-            aspect="wide"
-            className="h-full min-h-72"
-          />
         </div>
       </div>
     </section>

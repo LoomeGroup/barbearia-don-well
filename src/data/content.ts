@@ -10,6 +10,7 @@ import {
   Gem,
 } from "lucide-react";
 import galleryCadeiras from "../assets/gallery-cadeiras.jpg";
+import galleryFachada from "../assets/gallery-fachada.jpg";
 
 export type Service = {
   icon: LucideIcon;
@@ -89,12 +90,8 @@ export type GalleryImage = {
 };
 
 export const galleryImages: GalleryImage[] = [
-  { label: "Fachada da barbearia", ratio: "landscape" },
+  { label: "Fachada da barbearia", ratio: "portrait", src: galleryFachada },
   { label: "Cadeiras de barbeiro em couro", ratio: "portrait", src: galleryCadeiras },
-  { label: "Balcão e prateleira de produtos", ratio: "square" },
-  { label: "Detalhe de iluminação âmbar", ratio: "square" },
-  { label: "Estação de barba e navalhas", ratio: "portrait" },
-  { label: "Lounge e área de espera", ratio: "landscape" },
 ];
 
 export type Testimonial = {
