@@ -9,6 +9,7 @@ import {
   Target,
   Gem,
 } from "lucide-react";
+import galleryCadeiras from "../assets/gallery-cadeiras.jpg";
 
 export type Service = {
   icon: LucideIcon;
@@ -84,11 +85,12 @@ export const pillars: Pillar[] = [
 export type GalleryImage = {
   label: string;
   ratio: "square" | "portrait" | "landscape";
+  src?: string;
 };
 
 export const galleryImages: GalleryImage[] = [
   { label: "Fachada da barbearia", ratio: "landscape" },
-  { label: "Cadeiras de barbeiro em couro", ratio: "portrait" },
+  { label: "Cadeiras de barbeiro em couro", ratio: "portrait", src: galleryCadeiras },
   { label: "Balcão e prateleira de produtos", ratio: "square" },
   { label: "Detalhe de iluminação âmbar", ratio: "square" },
   { label: "Estação de barba e navalhas", ratio: "portrait" },
