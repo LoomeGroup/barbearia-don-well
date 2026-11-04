@@ -17,7 +17,7 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className="group relative flex flex-col gap-5 border border-gold/15 bg-charcoal p-8 transition-all duration-300 hover:border-gold/50 hover:shadow-[0_0_30px_rgba(201,161,90,0.12)]"
+                className="group relative flex flex-col gap-5 border border-gold/15 bg-charcoal p-8 transition-all duration-300 hover:border-gold/50 hover:shadow-[0_0_30px_rgba(214,165,116,0.12)]"
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-full border border-gold/40 transition-colors duration-300 group-hover:border-gold">
                   <Icon className="h-6 w-6 text-gold" strokeWidth={1.5} />

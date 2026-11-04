@@ -1,21 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Playfair Display", "Georgia", serif;
+  /* Taviraj: wedge serifs and wide capitals, the closest web font to the Don Well wordmark. */
+  --font-serif: "Taviraj", "Georgia", serif;
   --font-sans: "Inter", system-ui, sans-serif;
 
-  --color-ink: #0a0a09;
-  --color-charcoal: #16130f;
-  --color-charcoal-light: #1f1a14;
-  --color-leather: #241d16;
+  /* Brand identity: brand black, off-white wordmark and the copper gradient of the DW monogram. */
+  --color-ink: #0c0b0b;
+  --color-charcoal: #161413;
 
-  --color-gold: #c9a15a;
-  --color-gold-light: #e8cd8a;
-  --color-gold-dark: #8a6a2f;
-  --color-amber: #b8813a;
+  --color-gold-light: #f5c88f; /* copper gradient start */
+  --color-gold: #d6a574; /* copper gradient midpoint, the solid accent */
+  --color-gold-dark: #bb865c; /* copper gradient end */
 
-  --color-cream: #f3ead9;
-  --color-smoke: #a89a86;
+  --color-cream: #ededed;
+  --color-smoke: #a39d97;
 
   --animate-fade-up: fade-up 0.8s ease-out both;
   --animate-glow: glow 3.5s ease-in-out infinite;
@@ -61,20 +60,25 @@
 }
 
 @layer utilities {
-  .text-shadow-glow {
-    text-shadow: 0 0 30px rgba(201, 161, 90, 0.35);
-  }
-
   .bg-radial-spot {
     background: radial-gradient(
       circle at 50% 0%,
-      rgba(201, 161, 90, 0.16),
+      rgba(214, 165, 116, 0.14),
       transparent 60%
     );
   }
 
   .bg-grain {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+
+  /* Same left-to-right copper gradient as the monogram and the rules around "BARBER CLUB". */
+  .bg-copper {
+    background-image: linear-gradient(
+      90deg,
+      var(--color-gold-light),
+      var(--color-gold-dark)
+    );
   }
 
   .divider-gold {

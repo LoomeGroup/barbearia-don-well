@@ -1,7 +1,7 @@
 import { ChevronDown, MessageCircle } from "lucide-react";
-import Logo from "./Logo";
 import { whatsappLink } from "../lib/site";
 import heroInterior from "../assets/hero-interior.jpg";
+import lockup from "../assets/brand/don-well-lockup.svg";
 
 export default function Hero() {
   return (
@@ -28,18 +28,15 @@ export default function Hero() {
       />
 
       <div className="animate-fade-up relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-8 px-6 pt-24 text-center">
-        <Logo className="h-24 w-24 sm:h-28 sm:w-28" />
-
-        <div className="flex flex-col items-center gap-2">
-          <h1 className="text-shadow-glow font-serif text-5xl font-bold tracking-wide text-cream sm:text-6xl md:text-7xl">
-            DON WELL
-          </h1>
-          <span className="font-sans text-sm tracking-[0.5em] text-gold sm:text-base">
-            BARBER CLUB
-          </span>
-        </div>
-
-        <span className="divider-gold w-24" />
+        <h1 className="mb-2">
+          <img
+            src={lockup}
+            alt="Don Well Barber Club"
+            width={665}
+            height={314}
+            className="h-auto w-64 sm:w-80 md:w-[26rem]"
+          />
+        </h1>
 
         <p className="max-w-xl font-serif text-xl leading-relaxed text-cream/90 italic sm:text-2xl">
           Onde disciplina, estilo e atitude se encontram na cadeira do
@@ -56,7 +53,7 @@ export default function Hero() {
             href={whatsappLink("Olá! Gostaria de agendar um horário na Don Well Barber Club.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-gold px-8 py-4 font-sans text-sm font-semibold tracking-wide text-ink shadow-[0_0_30px_rgba(201,161,90,0.25)] transition-all duration-300 hover:bg-gold-light hover:shadow-[0_0_40px_rgba(201,161,90,0.4)]"
+            className="bg-copper inline-flex items-center justify-center gap-2 px-8 py-4 font-sans text-sm font-semibold tracking-wide text-ink shadow-[0_0_30px_rgba(214,165,116,0.25)] transition-all duration-300 hover:shadow-[0_0_40px_rgba(214,165,116,0.4)] hover:brightness-110"
           >
             <MessageCircle className="h-4 w-4" strokeWidth={2} />
             Agendar pelo WhatsApp

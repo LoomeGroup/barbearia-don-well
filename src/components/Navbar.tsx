@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import Logo from "./Logo";
 import { whatsappLink } from "../lib/site";
+import monogram from "../assets/brand/don-well-monogram.svg";
 
 const links = [
   { href: "#servicos", label: "Serviços" },
@@ -31,16 +31,14 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#topo" className="flex items-center gap-3">
-          <Logo className="h-10 w-10" />
-          <span className="flex flex-col leading-none">
-            <span className="font-serif text-lg font-semibold tracking-wide text-cream">
-              DON WELL
-            </span>
-            <span className="font-sans text-[0.6rem] tracking-[0.3em] text-gold">
-              BARBER CLUB
-            </span>
-          </span>
+        <a href="#topo" className="flex items-center">
+          <img
+            src={monogram}
+            alt="Don Well Barber Club"
+            width={248}
+            height={111}
+            className="h-8 w-auto lg:h-9"
+          />
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">

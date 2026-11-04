@@ -59,7 +59,7 @@ export default function Location() {
                 href={whatsappLink("Olá! Gostaria de agendar um horário na Don Well Barber Club.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-gold px-6 py-3.5 font-sans text-sm font-semibold tracking-wide text-ink transition-all duration-300 hover:bg-gold-light"
+                className="bg-copper inline-flex items-center justify-center gap-2 px-6 py-3.5 font-sans text-sm font-semibold tracking-wide text-ink transition-all duration-300 hover:brightness-110"
               >
                 <MessageCircle className="h-4 w-4" strokeWidth={2} />
                 WhatsApp

@@ -1,3 +1,4 @@
+import Eyebrow from "./Eyebrow";
 import { pillars } from "../data/content";
 import aboutBarbeiro from "../assets/about-barbeiro.jpg";
 
@@ -7,9 +8,7 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
-            <span className="font-sans text-xs font-medium tracking-[0.35em] text-gold uppercase">
-              Nossa essência
-            </span>
+            <Eyebrow align="left">Nossa essência</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl font-semibold text-cream sm:text-4xl md:text-5xl">
               Mais que um corte,
               <br />

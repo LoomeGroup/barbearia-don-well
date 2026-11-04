@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
-import Logo from "./Logo";
 import InstagramIcon from "./icons/InstagramIcon";
 import { SITE, whatsappLink } from "../lib/site";
+import seal from "../assets/brand/don-well-seal.svg";
 
 const links = [
   { href: "#servicos", label: "Serviços" },
@@ -18,16 +18,18 @@ export default function Footer() {
 
       <div className="mx-auto max-w-7xl px-6 pt-16 lg:px-8">
         <div className="flex flex-col items-center gap-8 text-center">
-          <a href="#topo" className="flex flex-col items-center gap-3">
-            <Logo className="h-16 w-16" />
-            <span className="flex flex-col items-center leading-none">
-              <span className="font-serif text-xl font-semibold tracking-wide text-cream">
-                DON WELL
-              </span>
-              <span className="mt-1 font-sans text-[0.6rem] tracking-[0.3em] text-gold">
-                BARBER CLUB
-              </span>
-            </span>
+          <a
+            href="#topo"
+            className="block transition-opacity duration-300 hover:opacity-85"
+          >
+            <img
+              src={seal}
+              alt="Don Well Barber Club"
+              width={507}
+              height={507}
+              loading="lazy"
+              className="h-32 w-32 sm:h-36 sm:w-36"
+            />
           </a>
 
           <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
