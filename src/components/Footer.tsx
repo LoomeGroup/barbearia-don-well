@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import InstagramIcon from "./icons/InstagramIcon";
-import { SITE, whatsappLink } from "../lib/site";
+import { SITE, UNITS, whatsappLink } from "../lib/site";
 import seal from "../assets/brand/don-well-seal.svg";
 
 const links = [
@@ -71,7 +71,11 @@ export default function Footer() {
           <p className="font-sans text-xs text-smoke">
             © {new Date().getFullYear()} Don Well Barber Club. Todos os direitos reservados.
           </p>
-          <p className="font-sans text-xs text-smoke/70">{SITE.address}</p>
+          {UNITS.map((unit) => (
+            <p key={unit.id} className="font-sans text-xs text-smoke/70">
+              <span className="text-smoke">{unit.name}:</span> {unit.address}
+            </p>
+          ))}
         </div>
       </div>
     </footer>
