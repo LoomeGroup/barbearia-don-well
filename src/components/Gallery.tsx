@@ -18,7 +18,11 @@ export default function Gallery() {
           description="Um espaço desenhado nos mínimos detalhes: couro, madeira escura e metais dourados sob luz âmbar."
         />
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-2 gap-4 sm:gap-6">
+        <div
+          className={`mx-auto mt-16 grid gap-4 sm:gap-6 ${
+            galleryImages.length > 1 ? "max-w-2xl grid-cols-2" : "max-w-sm grid-cols-1"
+          }`}
+        >
           {galleryImages.map((image) =>
             image.src ? (
               <div
